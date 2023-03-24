@@ -14,6 +14,7 @@ public enum TokenType {
     VAR,
     TRUE,
     FALSE,
+    CLASS,
 
     // Ignored
     WHITESPACE,
@@ -53,10 +54,11 @@ public enum TokenType {
     STRING_LITERAL,
 
     // Types
-    INT("int"),
-    DOUBLE("double"),
-    BOOLEAN("boolean"),
-    FLOAT("float"),
+    INT("Int"),
+    DOUBLE("Double"),
+    BOOLEAN("Boolean"),
+    FLOAT("Float"),
+    STRING("String"),
 
     // End of input
     EOF;
@@ -65,7 +67,8 @@ public enum TokenType {
 
     private static final Map<String, TokenType> KEYWORDS = new HashMap<>();
     static {
-        KEYWORDS.put("function", FUNCTION);
+        KEYWORDS.put("func", FUNCTION);
+        KEYWORDS.put("class", CLASS);
         KEYWORDS.put("return", RETURN);
         KEYWORDS.put("if", IF);
         KEYWORDS.put("else", ELSE);
@@ -74,10 +77,11 @@ public enum TokenType {
         KEYWORDS.put("var", VAR);
         KEYWORDS.put("true", TRUE);
         KEYWORDS.put("false", FALSE);
-        KEYWORDS.put("int", INT);
-        KEYWORDS.put("double", DOUBLE);
-        KEYWORDS.put("float", FLOAT);
-        KEYWORDS.put("boolean", BOOLEAN);
+        KEYWORDS.put("Int", INT);
+        KEYWORDS.put("Double", DOUBLE);
+        KEYWORDS.put("Float", FLOAT);
+        KEYWORDS.put("Boolean", BOOLEAN);
+        KEYWORDS.put("String", STRING);
         // Add more keywords as needed
     }
 

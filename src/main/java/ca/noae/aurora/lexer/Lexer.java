@@ -3,6 +3,7 @@ package ca.noae.aurora.lexer;
 import java.util.ArrayList;
 import java.util.List;
 
+// TODO: Add support for no whitespace between tokens
 public class Lexer {
     private final String input;
     private int currentPosition;
@@ -38,15 +39,6 @@ public class Lexer {
 
         tokens.add(new Token(TokenType.EOF, ""));
         return tokens;
-    }
-
-    private Token tokenizeWhitespace() {
-        StringBuilder lexeme = new StringBuilder();
-        while (hasNextChar() && (getCurrentChar() == ' ' || getCurrentChar() == '\t' || getCurrentChar() == '\n')) {
-            lexeme.append(getCurrentChar());
-            consumeChar();
-        }
-        return new Token(TokenType.WHITESPACE, lexeme.toString());
     }
 
     private Token tokenizeNumber() {
