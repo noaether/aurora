@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d8b3d1d-41b9-4770-ab39-4bf6b33c5c95" name="Changes" comment="added one test for now">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/noae/aurora/AuroraTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/TokenType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/noae/aurora/AuroraTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/noae/aurora/AuroraTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AuroraTester.testLexer">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.Main" />
-      <module name="aurora" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.noae.aurora.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AuroraTests">
     <configuration name="AuroraTester.testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aurora" />
       <extension name="coverage">
@@ -76,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuroraTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aurora" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +73,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.noae.aurora" />
-      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.Main" />
+      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.AuroraTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuroraTests.testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.noae.aurora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.noae.aurora" />
+      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.AuroraTests" />
       <option name="METHOD_NAME" value="testLexer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuroraTests.testLexerWithInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.noae.aurora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.noae.aurora" />
+      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.AuroraTests" />
+      <option name="METHOD_NAME" value="testLexerWithInvalidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuroraTests.testTokenTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.noae.aurora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.noae.aurora" />
+      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.AuroraTests" />
+      <option name="METHOD_NAME" value="testTokenTypes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,9 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuroraTests" />
+        <item itemvalue="JUnit.AuroraTests.testLexer" />
+        <item itemvalue="JUnit.AuroraTests.testLexerWithInvalidInput" />
+        <item itemvalue="JUnit.AuroraTests.testTokenTypes" />
         <item itemvalue="JUnit.AuroraTester.testLexer" />
-        <item itemvalue="JUnit.Main.testLexer" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +146,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679628845820</updated>
       <workItem from="1679628847973" duration="4764000" />
-      <workItem from="1679633651355" duration="1181000" />
+      <workItem from="1679633651355" duration="1195000" />
+      <workItem from="1679634879771" duration="2006000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1679628960099</created>
@@ -174,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679633689632</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added one test for now">
+      <created>1679634835146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679634835146</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added one test for now">
+      <created>1679634842368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679634842368</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
