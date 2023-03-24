@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d8b3d1d-41b9-4770-ab39-4bf6b33c5c95" name="Changes" comment="started actually testing the lexer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/Lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/noae/aurora/lexer/TokenType.java" afterDir="false" />
-    </list>
+    <list default="true" id="6d8b3d1d-41b9-4770-ab39-4bf6b33c5c95" name="Changes" comment="need to sleep" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679628845820</updated>
-      <workItem from="1679628847973" duration="4752000" />
+      <workItem from="1679628847973" duration="4764000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1679628960099</created>
@@ -126,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679633017338</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="need to sleep">
+      <created>1679633611992</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679633611992</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +165,7 @@
     <MESSAGE value="added whitespace support" />
     <MESSAGE value="ignored whitespaces" />
     <MESSAGE value="started actually testing the lexer" />
-    <option name="LAST_COMMIT_MESSAGE" value="started actually testing the lexer" />
+    <MESSAGE value="need to sleep" />
+    <option name="LAST_COMMIT_MESSAGE" value="need to sleep" />
   </component>
 </project>
