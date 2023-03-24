@@ -9,7 +9,8 @@ Aurora is a programming language designed to be simple, efficient, and easy to l
 - Fast: Aurora is designed to be efficient and optimized for speed.
 - Cross-platform: Aurora programs can be compiled and run on a wide range of platforms, including Windows, macOS, and Linux.
 - Easy to learn: Aurora is designed to be easy to learn, with a minimal set of keywords and simple syntax.
-- Getting Started
+
+## Getting Started
 
 To get started with Aurora, you will need to install the Aurora compiler on your system. You can download the latest version of the compiler from the Aurora website or from GitHub.
 
