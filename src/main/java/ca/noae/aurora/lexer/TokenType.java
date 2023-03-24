@@ -15,6 +15,10 @@ public enum TokenType {
     TRUE,
     FALSE,
 
+    // Ignored
+    WHITESPACE,
+    COMMENT,
+
     // Symbols
     LPAREN("("),
     RPAREN(")"),
