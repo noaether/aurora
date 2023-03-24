@@ -1,4 +1,5 @@
 # Aurora Programming Language
+![](https://img.shields.io/tokei/lines/github/noaether/aurora) ![](https://img.shields.io/badge/hours%20of%20sleep-none-green) \
 Aurora is a programming language designed to be simple, efficient, and easy to learn. It is a statically typed language with a C-style syntax and is intended for use in system programming, scripting, and application development.
 
 ## Features
