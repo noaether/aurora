@@ -24,6 +24,18 @@ public class Lexer {
                 tokens.add(tokenizeIdentifierOrKeyword());
             } else if (c == '"') {
                 tokens.add(tokenizeString());
+                // double strings
+            } else if (c == '|' || c == '&' || c == '=') {
+                if(peekNextChar() == c) {
+                    tokens.add(tokenizeDoubleChar(c));
+                } else {
+                    TokenType tokenType = TokenType.getSymbolTokenType(c);
+                    if (tokenType != null) {
+                        tokens.add(new Token(tokenType, String.valueOf(c)));
+                    } else {
+                        throw new LexicalException("Invalid character: " + c + " at position " + currentPosition);
+                    }
+                }
             } else if (c == ' ' || c == '\t' || c == '\n') {
                 // ignore whitespace
             } else {
@@ -56,6 +68,28 @@ public class Lexer {
             return new Token(TokenType.INTEGER_LITERAL, input.substring(startPosition, currentPosition));
         }
     }
+
+    private Token tokenizeDoubleChar(char c) {
+        consumeChar();
+        if (c == '|' && getCurrentChar() == '|') {
+            return new Token(TokenType.DOUBLE_PIPE, "||");
+        } else if (c == '&' && getCurrentChar() == '&') {
+            return new Token(TokenType.DOUBLE_AMPERSAND, "&&");
+        } else if (c == '=' && getCurrentChar() == '=') {
+            return new Token(TokenType.DOUBLE_EQUAL, "==");
+        } else {
+            return null;
+        }
+    }
+
+    private char peekNextChar() {
+        if (currentPosition + 1 < input.length()) {
+            return input.charAt(currentPosition + 1);
+        } else {
+            return '\0';
+        }
+    }
+
 
     private Token tokenizeIdentifierOrKeyword() {
         int startPosition = currentPosition;

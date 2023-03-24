@@ -46,6 +46,7 @@ public enum TokenType {
     COLON(":"),
     DOUBLE_AMPERSAND("&&"),
     DOUBLE_PIPE("||"),
+    DOUBLE_EQUAL("=="),
 
     // Literals
     IDENTIFIER,
