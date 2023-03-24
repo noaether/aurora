@@ -23,12 +23,14 @@ public class Lexer {
                 tokens.add(tokenizeIdentifierOrKeyword());
             } else if (c == '"') {
                 tokens.add(tokenizeString());
+            } else if (c == ' ' || c == '\t' || c == '\n') {
+                // ignore whitespace
             } else {
                 TokenType tokenType = TokenType.getSymbolTokenType(c);
                 if (tokenType != null) {
                     tokens.add(new Token(tokenType, String.valueOf(c)));
                 } else {
-                    throw new LexicalException("Invalid character: " + c);
+                    throw new LexicalException("Invalid character: " + c + " at position " + currentPosition);
                 }
             }
             consumeChar();
@@ -36,6 +38,15 @@ public class Lexer {
 
         tokens.add(new Token(TokenType.EOF, ""));
         return tokens;
+    }
+
+    private Token tokenizeWhitespace() {
+        StringBuilder lexeme = new StringBuilder();
+        while (hasNextChar() && (getCurrentChar() == ' ' || getCurrentChar() == '\t' || getCurrentChar() == '\n')) {
+            lexeme.append(getCurrentChar());
+            consumeChar();
+        }
+        return new Token(TokenType.WHITESPACE, lexeme.toString());
     }
 
     private Token tokenizeNumber() {
@@ -79,7 +90,7 @@ public class Lexer {
             } else if (c == '\\') {
                 consumeChar();
                 if (!hasNextChar()) {
-                    throw new LexicalException("Invalid escape sequence: \\");
+                    throw new LexicalException("Invalid escape sequence: \\" + " at position " + currentPosition);
                 }
                 char escapeChar = getCurrentChar();
                 switch (escapeChar) {
@@ -89,7 +100,7 @@ public class Lexer {
                     case '\'' -> sb.append('\'');
                     case '\"' -> sb.append('\"');
                     case '\\' -> sb.append('\\');
-                    default -> throw new LexicalException("Invalid escape sequence: \\" + escapeChar);
+                    default -> throw new LexicalException("Invalid escape sequence: \\" + escapeChar + " at position " + currentPosition);
                 }
             } else {
                 sb.append(c);
