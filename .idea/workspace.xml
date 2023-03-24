@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d8b3d1d-41b9-4770-ab39-4bf6b33c5c95" name="Changes" comment="need to sleep" />
+    <list default="true" id="6d8b3d1d-41b9-4770-ab39-4bf6b33c5c95" name="Changes" comment="added one test for now">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/noae/aurora/AuroraTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,18 +35,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.AuroraTester.testLexer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.Main" />
       <module name="aurora" />
@@ -56,8 +60,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuroraTester.testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.noae.aurora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.noae.aurora" />
+      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.AuroraTester" />
+      <option name="METHOD_NAME" value="testLexer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.noae.aurora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.noae.aurora" />
+      <option name="MAIN_CLASS_NAME" value="ca.noae.aurora.Main" />
+      <option name="METHOD_NAME" value="testLexer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuroraTester.testLexer" />
+        <item itemvalue="JUnit.Main.testLexer" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -71,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679628845820</updated>
       <workItem from="1679628847973" duration="4764000" />
+      <workItem from="1679633651355" duration="1181000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1679628960099</created>
@@ -128,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679633611992</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="need to sleep">
+      <created>1679633689632</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679633689632</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +212,7 @@
     <MESSAGE value="ignored whitespaces" />
     <MESSAGE value="started actually testing the lexer" />
     <MESSAGE value="need to sleep" />
-    <option name="LAST_COMMIT_MESSAGE" value="need to sleep" />
+    <MESSAGE value="added one test for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="added one test for now" />
   </component>
 </project>
